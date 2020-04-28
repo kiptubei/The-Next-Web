@@ -14,7 +14,7 @@ html {
   margin: auto;
   background-color: white;
   box-sizing: border-box;
-  max-width: 100%;
+  max-width: 1440px;
 }
 
 body {
@@ -23,11 +23,27 @@ body {
   position: relative;
   padding-bottom: 10px;
   overflow-x: hidden;
-  width: 80%;
+  max-width: 1440px;
   margin: auto;
   box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
+}
+
+/*Small (-sm-) devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/*Medium (-md-) devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+/*Large (-lg-) devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
+
+/*Extra large (-xl-) devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
 }
