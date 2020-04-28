@@ -32,18 +32,72 @@ a {
   text-decoration: none;
 }
 
+select {
+  background-color: black;
+  color: grey;
+  border: none;
+}
+
 /*Small (-sm-) devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 }
 
 /*Medium (-md-) devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  .top-black-nav {
+    display: none;
+  }
 }
 
 /*Large (-lg-) devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 }
 
-/*Extra large (-xl-) devices (large desktops, 1200px and up)*/
+/* Extra large (-xl-) devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .top-black-nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .top-black-nav a {
+    color: grey;
+  }
+
+  .top-black-nav a:hover {
+    color: white;
+  }
+
+  .active {
+    color: white !important;
+  }
+
+  .top-half-one {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .top-half-one ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .top-half-one li {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1.2rem;
+  }
+
+  .top-half-two ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .top-half-two li {
+    padding-left: 1.2rem;
+  }
 }
