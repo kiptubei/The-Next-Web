@@ -1,41 +1,41 @@
 :root {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  margin: auto;
-  background-color: white;
-  box-sizing: border-box;
-  max-width: 1440px;
+	margin: auto;
+	background-color: white;
+	box-sizing: border-box;
+	max-width: 1440px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #eee;
-  position: relative;
-  padding-bottom: 10px;
-  overflow-x: hidden;
-  max-width: 1440px;
-  margin: auto;
-  box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #eee;
+	position: relative;
+	padding-bottom: 10px;
+	overflow-x: hidden;
+	max-width: 1440px;
+	margin: auto;
+	box-sizing: border-box;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 select {
-  background-color: black;
-  color: grey;
-  border: none;
+	background-color: black;
+	color: grey;
+	border: none;
 }
 
 /*Small (-sm-) devices (landscape phones, 576px and up)*/
@@ -44,9 +44,9 @@ select {
 
 /*Medium (-md-) devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  .top-black-nav {
-    display: none;
-  }
+	.top-black-nav {
+		display: none;
+	}
 }
 
 /*Large (-lg-) devices (desktops, 992px and up)*/
@@ -55,49 +55,92 @@ select {
 
 /* Extra large (-xl-) devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .top-black-nav {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    line-height: 1.5rem;
-    font-size: 0.8rem;
-  }
+	.top-black-nav {
+		background-color: black;
+		color: white;
+		display: flex;
+		justify-content: space-between;
+		line-height: 1.5rem;
+		font-size: 0.8rem;
+	}
 
-  .top-black-nav a {
-    color: grey;
-  }
+	.top-black-nav a {
+		color: grey;
+	}
 
-  .top-black-nav a:hover {
-    color: white;
-  }
+	.top-black-nav a:hover {
+		color: white;
+	}
 
-  .active {
-    color: white !important;
-  }
+	.active {
+		color: white !important;
+	}
 
-  .top-half-one {
-    display: flex;
-    flex-direction: row;
-  }
+	.top-half-one {
+		display: flex;
+		flex-direction: row;
+	}
 
-  .top-half-one ul {
-    display: flex;
-    justify-content: space-around;
-  }
+	.top-half-one ul {
+		display: flex;
+		justify-content: space-around;
+	}
 
-  .top-half-one li {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 1.2rem;
-  }
+	.top-half-one li {
+		display: flex;
+		justify-content: space-around;
+		padding-left: 1.2rem;
+	}
 
-  .top-half-two ul {
-    display: flex;
-    justify-content: space-around;
-  }
+	.top-half-two ul {
+		display: flex;
+		justify-content: space-around;
+	}
 
-  .top-half-two li {
-    padding-left: 1.2rem;
-  }
+	.top-half-two li {
+		padding-left: 1.2rem;
+	}
+
+	.top-white-nav {
+		background-color: white;
+		color: grey;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		line-height: 1.6rem;
+
+		font-size: 0.8rem;
+		font-weight: bold;
+		height: 4rem;
+	}
+
+	.top-white-one ul {
+		display: flex;
+		justify-content: space-around;
+	}
+	.top-white-one li {
+		padding-left: 1.2rem;
+	}
+
+	.top-white-two {
+		display: flex;
+		justify-content: space-around;
+		padding-left: 1.2rem;
+	}
+	.top-white-nav a {
+		color: grey;
+		text-transform: uppercase;
+	}
+
+	.top-white-nav a:hover {
+		color: black;
+	}
+	.top-white-two {
+		padding-right: 1.5em;
+		font-size: 1.5em;
+		border-right: 1px solid #ddd;
+		color: #ddd;
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+	}
 }
