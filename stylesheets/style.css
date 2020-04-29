@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "ARS Maquette Pro", Helvetica, Arial, sans-serif;
   background-color: #eee;
   position: relative;
   padding-bottom: 10px;
@@ -36,6 +36,10 @@ select {
   background-color: black;
   color: grey;
   border: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*Small (-sm-) devices (landscape phones, 576px and up)*/
@@ -117,7 +121,9 @@ select {
   .top-white-one ul {
     display: flex;
     justify-content: space-around;
+    padding: 0.5 rem 0;
   }
+
   .top-white-one li {
     padding-left: 1.2rem;
   }
@@ -146,44 +152,118 @@ select {
 
   .main-news-section {
     display: grid;
-    grid-template-areas:
-      "hero hero side-news-one"
-      "hero hero side-news-two";
-    grid-gap: 5px;
+    /*grid-template-areas:
+      "hero hero hero side-news-one side-news-one"
+      "hero hero hero side-news-two side-news-two";*/
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.5rem;
     background-color: #eee;
-    height: 75vh;
+    /*height: 75vh;*/
     max-height: 560px;
+    color: white;
+    margin: 0 0.5rem;
   }
 
   .hero {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(rgba(241, 70, 84, 0.8), rgba(94, 129, 190, 0.5)),
       url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_cd4214-796x425.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    box-sizing: border-box;
-    height: 100%;
+    /* background-position: center; */
+    background-size: cover;
+    /*  box-sizing: border-box; */
+    grid-area: 1/1/3/3;
+    /*grid-area: hero;*/
+  }
 
-    grid-area: hero;
+  .hero-img-half {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero-img {
+    font-family: "ARS Maquette Pro", Arial, sans-serif;
+    font-size: 8rem;
+    font-weight: 900;
+    padding-left: 1.5rem;
+    font-stretch: ultra-expanded;
+    margin-bottom: 2rem;
+  }
+
+  .hero-date {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+
+  .hero-header {
+    margin: 2rem;
+  }
+
+  .hero-header h5 {
+    padding: 0.5 rem 0;
+  }
+
+  .hero-header h5 > a {
+    color: white;
+  }
+
+  .hero-header h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .hero-header ul {
+    display: flex;
+    margin-top: 1rem;
+    color: #eee;
+  }
+
+  .hero-header a {
+    color: #eee;
+  }
+
+  .hero-header a:hover {
+    text-decoration-color: white;
   }
 
   .side-news-one {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_707d6c-796x414.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+    /*background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_707d6c-796x414.png");*/
 
-    width: 100%;
-    grid-area: side-news-one;
+    background: linear-gradient(rgba(213, 184, 255, 1), rgba(0, 0, 128, 0.5)),
+      url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_707d6c-796x414.png");
+    grid-area: 1/3/2/4;
+    background-position: center;
   }
 
   .side-news-two {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/solarfusion-796x398.jpg");
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-size: cover;
 
-    width: 100%;
-    grid-area: side-news-two;
+    /*background: linear-gradient(rgba(241, 70, 84, 0.8), rgba(94, 129, 190, 0.5)),
+      url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/solarfusion-796x398.jpg");*/
+    grid-area: 2/3/3/4;
+    background-position: center;
+  }
+
+  .hero-header-side {
+    margin-top: 4rem;
+  }
+
+  .hero-header-side h5 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-header-side h2 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+
+  .hero-header-side ul {
+    font-size: 0.7rem;
   }
 }
