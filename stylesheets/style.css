@@ -46,6 +46,15 @@ img {
 
 /*Small (-sm-) devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+	.hero {
+		grid-area: hero;
+	}
+	.side-news-one {
+		grid-area: side-news-one;
+	}
+	.side-news-one {
+		grid-area: side-news-two;
+	}
 }
 
 /*Medium (-md-) devices (tablets, 768px and up)*/
@@ -154,9 +163,9 @@ img {
 
 	.main-news-section {
 		display: grid;
-		/*grid-template-areas:
-      "hero hero hero side-news-one side-news-one"
-      "hero hero hero side-news-two side-news-two";*/
+		grid-template-areas:
+			"hero hero side-news-one"
+			"hero hero side-news-two";
 
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
@@ -562,5 +571,44 @@ img {
 	}
 	.latest-deals-imgUrl-8 {
 		background-image: url(https://cdnp3.stackassets.com/e91079ae97e0b5906c733ad4c66c82d147ebe659/store/e996d2103e285cb420b2d86b994daf58228d34b11f076bacdb1acce93403/sale_27436_primary_image.jpg);
+	}
+
+	/* Footer */
+	footer {
+		text-align: center;
+	}
+
+	.footer-top-content-wrapper {
+		background: #131313;
+		height: 200px;
+	}
+	.top-footer {
+		max-width: 1192px;
+		padding: 0 20px;
+	}
+	.footer-links {
+		margin: 2em 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer-social:nth-child(1) a {
+		margin-right: 10px;
+		color: white;
+		border-radius: 50%;
+		padding: 0.6em;
+		background-color: #555;
+	}
+
+	.bottom-footer {
+		background: #000;
+		font-size: 13px;
+	}
+	.footer-logo {
+		display: inline-block;
+		height: 9px;
+		margin-right: 1px;
+
+		width: 2%;
 	}
 }
