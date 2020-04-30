@@ -45,16 +45,45 @@ img {
 }
 
 /*Small (-sm-) devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-  .hero {
-    grid-area: hero;
-  }
-  .side-news-one {
-    grid-area: side-news-one;
-  }
-  .side-news-one {
-    grid-area: side-news-two;
-  }
+@media screen and (min-width: 400px) {
+.top-white-nav,.top-black-nav{
+  display: none;
+}
+
+.mobile-white-nav{
+  display: flex;
+  flex-direction: row;
+  color:white;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(211,211,211);
+}
+
+.mobile-white-nav img{
+  background-color: red;
+  background:linear-gradient(to bottom right, #c09, #f42 85%);
+  height: 100%;
+  width:50%;
+  padding: 1rem 1.5rem;
+
+}
+
+.mobile-white-two i{
+  font-size: 1.5rem;
+  height:100%;
+  color:rgb(211,211,211);
+  border-left: 1px solid rgb(211,211,211);
+  padding: 15% 1rem;
+}
+
+
+.mobile-white-two i:nth-child(2n){
+  color: red;
+}
+
+.mobile-white-two{
+  display:flex;
+}
+
 }
 
 /*Medium (-md-) devices (tablets, 768px and up)*/
@@ -70,6 +99,10 @@ img {
 
 /* Extra large (-xl-) devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+.mobile-white-nav{
+  display: none;
+}
+
   .top-black-nav {
     background-color: black;
     color: white;
@@ -163,15 +196,10 @@ img {
 
   .main-news-section {
     display: grid;
-    grid-template-areas:
-      "hero hero side-news-one"
-      "hero hero side-news-two";
-
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0.5rem;
     background-color: #fff;
-    /*height: 75vh;*/
     max-height: 560px;
     color: white;
     margin: 0 0.5rem 1.5rem 0.5rem;
@@ -180,14 +208,11 @@ img {
   .hero {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(rgba(241, 70, 84, 0.8), rgba(94, 129, 190, 0.5)),
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 1)),
       url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_cd4214-796x425.png");
     background-repeat: no-repeat;
-    /* background-position: center; */
     background-size: cover;
-    /*  box-sizing: border-box; */
     grid-area: 1/1/3/3;
-    /*grid-area: hero;*/
   }
 
   .hero-img-half {
@@ -243,9 +268,8 @@ img {
   }
 
   .side-news-one {
-    /*background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_707d6c-796x414.png");*/
 
-    background: linear-gradient(rgba(213, 184, 255, 1), rgba(0, 0, 128, 0.5)),
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 1)),
       url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_707d6c-796x414.png");
     grid-area: 1/3/2/4;
     background-position: center;
@@ -253,9 +277,6 @@ img {
 
   .side-news-two {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/solarfusion-796x398.jpg");
-
-    /*background: linear-gradient(rgba(241, 70, 84, 0.8), rgba(94, 129, 190, 0.5)),
-      url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/solarfusion-796x398.jpg");*/
     grid-area: 2/3/3/4;
     background-position: center;
   }
@@ -630,13 +651,11 @@ img {
 }
 
   .footer-logo-tnw {
-    /*display: inline-block;*/
     height:4%;
     width: 4%;
   }
 
   .footer-logo-stack {
-    /*display: inline-block;*/
     height:6%;
     width: 6%;
   }
