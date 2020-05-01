@@ -16,7 +16,7 @@ This project is the heatmap of smashing magazine
 ## Live Demo
 
 ​
-[Live Demo Link](https://rawcdn.githack.com/uimarshall/marshall-mark-smashing-magazine-HeatMap/feature/project-set-up/index.html)
+[Live Demo Link](https://rawcdn.githack.com/kiptubei/The-Next-Web/06d0da577b48724a32d3cd7f97a163576fe359f2/index.html)
 ​
 ​
 
