@@ -1897,7 +1897,7 @@ img {
   }
 
   .hero-header h5 {
-    padding: 0.5 rem 0.01rem;
+    padding: 0.5 rem 0;
   }
 
   .hero-header h5 > a {
