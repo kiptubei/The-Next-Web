@@ -3,7 +3,7 @@
 This project is the heatmap of smashing magazine
 
 > ​
-> ![screenshot](./images/page-screenshot.png)
+> ![screenshot](./images/TNW-page.png)
 > ​
 
 ## Built With
@@ -47,7 +47,7 @@ This project is the heatmap of smashing magazine
 ​
 Contributions, issues and feature requests are welcome!
 ​
-Feel free to check the [issues page](https://github.com/uimarshall/marshall-mark-smashing-magazine-HeatMap/issues).
+Feel free to check the [issues page](https://github.com/kiptubei/The-Next-Web/issues).
 ​
 
 ## Show your support
