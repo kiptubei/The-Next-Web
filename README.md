@@ -1,7 +1,6 @@
 # The-Next-Web Clone Project
 
-This project is the heatmap of smashing magazine
-
+This project is the [Next Web Magazine](thenextweb.com)
 > ​
 > ![screenshot](./images/TNW-page.png)
 > ​
