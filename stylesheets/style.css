@@ -543,7 +543,7 @@ img {
 	}
 	.tablet-size {
 		display: grid;
-		grid-template-columns: repeat(10, 1fr);
+		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: 1fr;
 	}
 	.tnw-logo-tablet {
@@ -568,10 +568,10 @@ img {
 		color: white;
 		display: flex;
 		justify-content: space-between;
-		line-height: 1.5rem;
-		font-size: 0.8rem;
-		padding: 0.1rem;
-		/* height: 2rem; */
+		line-height: 1.5;
+		font-size: 0.75rem;
+		padding: 0.15rem;
+		height: 27px;
 	}
 	.top-black-nav a {
 		color: grey;
@@ -619,10 +619,9 @@ img {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		line-height: 0.5rem;
-		/* margin-bottom: 10px; */
-		font-size: 0.8rem;
-		font-weight: bold;
+		line-height: 1.5;
+		font-size: 0.9rem;
+		font-weight: 700;
 		height: 3.3rem;
 	}
 
@@ -633,7 +632,7 @@ img {
 	}
 
 	.top-white-one li {
-		padding-left: 1.2rem;
+		padding-left: 2rem;
 	}
 
 	.top-white-nav a {
