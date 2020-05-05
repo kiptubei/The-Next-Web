@@ -15,7 +15,7 @@ This project is the [Next Web Magazine](thenextweb.com)
 ## Live Demo
 
 ​
-[Live Demo Link](https://rawcdn.githack.com/kiptubei/The-Next-Web/e792b418b3fd356d683f0592a8bb8c19c1f4ca17/index.html)
+[Live Demo Link](https://rawcdn.githack.com/kiptubei/The-Next-Web/4269148529c72a54429683ed9d1de6cf56ad9cb5/index.html)
 ​
 ​
 
