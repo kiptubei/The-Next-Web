@@ -371,11 +371,11 @@ img {
   }
 
   .funding-nav li {
-    color: #f42;
     margin-bottom: 1rem;
   }
 
-  .funding-nav a {
+  .funding-nav a,
+  .funding-nav li {
     color: #f42;
   }
 
@@ -1136,11 +1136,8 @@ img {
     margin-bottom: 1.2rem;
   }
 
+  .funding-nav a,
   .funding-nav li {
-    color: #f42;
-  }
-
-  .funding-nav a {
     color: #f42;
   }
 
@@ -1868,11 +1865,8 @@ img {
     justify-content: space-evenly;
   }
 
+  .funding-nav a,
   .funding-nav li {
-    color: #f42;
-  }
-
-  .funding-nav a {
     color: #f42;
   }
 
